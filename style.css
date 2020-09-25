@@ -34,6 +34,8 @@ a {
 
 
 .item-row {
+    margin-left: 0px;
+    margin-bottom: 100px;
     width: 850px;
     padding: 20px;
     display: inline-block;
@@ -63,25 +65,29 @@ a {
 .card img {
     max-width: 200px;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
-.btn {
-    text-align: center;
-    margin: auto;
+.btn-add {
+    font-family: "Poppins";
+    text-decoration: none;
+    border: none;
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     background-color: #0050e6;
     border-radius: 8px;
     color: #ffffff;
     transition: 0.6s;
+    cursor: pointer;
+    outline: none;
 }
 
-.btn:hover {
+.btn-add:hover {
     background-color: #003aa7;
     transition: 0.6s;
 }
 
-#item-price {
+.item-price {
     margin-bottom: 12px;
     color: #aaaaaa;
 }
@@ -98,70 +104,113 @@ a {
     background-color: #ffffff;
     border-radius: 8px;
     width: 300px;
-    height: 400px;
+    height: 500px;
     padding: 20px;
     margin-top: 40px;
 }
 
-.itemCart {
+.cart-place {
+    overflow: scroll;
+    margin-bottom: 20px;
+    max-height: 400px;
+    min-height: 400px;
+
+}
+
+.item-cart {
     border: 1px solid #aaaaaa;
     border-radius: 4px;
     display: inline-block;
-    width: 95%;
+    width: 80%;
+    margin-left: 20px;
+    padding: 5px;
     margin-bottom: 10px;
-    padding: 5px
 }
 
-.itemCart img {
+.item-cart img {
     display: inline-block;
-    width: 50px;
-    border-radius: 4px;
-    margin: auto 0;
+    width: 80px;
     padding: 10px;
 }
 
-.itemCart p {
-    font-size: 16px;
+.item-cart p {
+    font-size: 14px;
     text-align: right;
 }
 
-.detailCart {
-    width: 150px;
+.btn-remove {
+    width: 100%;
+    background-color: #cc0f0f;
+    color: #ffffff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    font-family: "Poppins";
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-remove:hover {
+    background-color: #8d0500;
+    transition: 0.6s;
+}
+
+.detail-cart {
+    width: 100px;
     margin-top: 10px;
+    margin-bottom: 10px;
     float: right;
     margin-right: 10px;
+}
+
+.detail-cart p {
+    display: inline;
 }
 
 .btn-checkout {
     position: absolute;
     bottom: 10px;
-    right: 0;
-    background-color: #d30000;
+    left: 0px;
+    background-color: #009657;
     border-radius: 8px;
     color: #fff;
     padding: 10px;
     width: 40%;
-    margin-left: 70%;
+    margin-left: 20px;
     text-align: center;
+    transition: 0.6s;
+    border: none;
+    font-family: "Poppins";
+    cursor: pointer;
+    outline: none;
 }
 
 .btn-checkout:hover {
-    background-color: #9e0000;
+    background-color: #00663c;
+    transition: 0.6s;
 }
 
-.total {
+.total-price {
     position: absolute;
     bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+}
 
+.total-title {
+    position: absolute;
+    bottom: 20px;
+    left: 160px;
+    font-size: 18px;
 }
 
 footer {
-    display: block;
+    margin-top: 125px;
+    width: 100%;
+    background-color: #0050e6;
     font-family: monospace;
     text-align: center;
-    background-color: #0050e6;
     color: #ffffff;
     font-weight: 300;
-    padding: 5px;
-    clear: right;
+    padding: 20px 0;
 }
